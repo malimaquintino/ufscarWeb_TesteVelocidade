@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste de Velocidade de Digitação em JS</title>
+    <script src="script_answer.js" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Teste a sua velocidade de digitação</h1>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <p> Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte! </p>
+        </section><!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte!</p>
+                <!-- <p>texto curto para teste.</p> -->
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6" placeholder="O timer começa quando você começar a digitar."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <button id="reset">Começar novamente</button>
+            </div><!-- .meta -->
+
+        </section><!-- .test-area -->
+
+
+        <section>
+            <div class="responsive">
+                <div class="gallery">
+                    <div id="trofeu1-locked" class="">
+                        <div class="desc">??????</div>
+                        <img src="img/a0.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio em mais de 02:00</div>
+                    </div>
+
+                    <div id="trofeu1-unlocked" class="hide">
+                        <div class="desc">Um dia você chega lá!</div>
+                        <img src="img/a5.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio em mais de 02:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div id="trofeu2-locked" class="">
+                        <div class="desc">??????</div>
+                        <img src="img/a0.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:40 e 02:00</div>
+                    </div>
+
+                    <div id="trofeu2-unlocked" class="hide">
+                        <div class="desc">Hoje sim....! &#128531</div>
+                        <img src="img/a4.jpg" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:40 e 02:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div id="trofeu3-locked" class="">
+                        <div class="desc">??????</div>
+                        <img src="img/a0.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:20 e 01:40</div>
+                    </div>
+
+                    <div id="trofeu3-unlocked" class="hide">
+                        <div class="desc">Selo relâmpago marquinhos</div>
+                        <img src="img/a2.jpg" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:20 e 01:40</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div id="trofeu4-locked" class="">
+                        <div class="desc">??????</div>
+                        <img src="img/a0.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:00 e 01:20</div>
+                    </div>
+
+                    <div id="trofeu4-unlocked" class="hide">
+                        <div class="desc">É o Braia</div>
+                        <img src="img/a1.jpg" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio entre 01:00 e 01:20</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <div id="trofeu5-locked" class="">
+                        <div class="desc">??????</div>
+                        <img src="img/a0.png" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio em menos de 01:00</div>
+                    </div>
+
+                    <div id="trofeu5-unlocked" class="hide">
+                        <div class="desc">EM MENOS DE UM MINUTO</div>
+                        <img src="img/a3.jpg" alt="troféu escondido" width="600" height="400">
+                        <div class="desc">Termine o desafio em menos de 01:00</div>
+                    </div>
+                </div>
+            </div> 
+            
+        </section>
+
+        <div id="notificar" class="notificacao hide">
+          <img src="img/conquista.gif">
+        </div>
+    </main>
+</body>
+
+</html>
